@@ -104,7 +104,7 @@ const CreateMatch: React.FC<CreateMatchProps> = ({ onSubmit, onCancel }) => {
             <input 
               type="password" value={password} onChange={e => setPassword(e.target.value)}
               className="w-full bg-black/60 border border-white/5 rounded-xl px-3 py-2 focus:outline-none focus:ring-1 focus:ring-emerald-500 transition-all text-[10px] font-bold tracking-[0.3em] text-center"
-              placeholder="â€¢â€¢â€¢â€¢"
+              placeholder="****"
             />
           </div>
           
