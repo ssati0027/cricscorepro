@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from 'react';
 import { Match, Innings, PlayerStats, BallRecord } from '../types';
 
@@ -44,7 +43,7 @@ const Scoreboard: React.FC<ScoreboardProps> = ({ match }) => {
     const inn = match.innings[innIdx];
     if (!inn) return (
       <div className="flex-1 flex flex-col items-center justify-center text-slate-700 py-12 px-6 bg-black/10 rounded-3xl border border-dashed border-white/5 m-4">
-        <span className="text-4xl mb-4 grayscale opacity-30">ðŸ</span>
+        <span className="text-4xl mb-4 grayscale opacity-30">🏏</span>
         <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-center text-slate-500">Waiting for Innings Start</p>
       </div>
     );
