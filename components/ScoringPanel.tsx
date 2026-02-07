@@ -257,7 +257,7 @@ const ScoringPanel: React.FC<ScoringPanelProps> = ({ match, onUpdate, isAdmin })
             if (!inn) return;
             inn.ballByBall.push({ ballId: `m_${Date.now()}`, striker: currentInnings.currentBatsmenNames[0], bowler: 'N/A', runs: 0, isExtra: false, isWicket: false, manualStrikeRotate: true });
             recalculate(up);
-        }} className="bg-slate-800 border border-white/5 py-2 rounded-lg text-sm">â‡„</button>
+        }} className="bg-slate-800 border border-white/5 py-2 rounded-lg text-sm">⇄</button>
         <button onClick={() => {
             const up: Match = JSON.parse(JSON.stringify(match));
             const inn = up.innings[innIdx] as Innings;
