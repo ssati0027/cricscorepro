@@ -88,7 +88,7 @@ const LiveScorecard: React.FC<LiveScorecardProps> = ({ match, onToggleScoreboard
                <span className="text-xs font-bebas text-emerald-400 mt-1">({overs}.{balls} OV)</span>
             </div>
             <div className="flex flex-col">
-              <p className="text-[8px] font-bold text-slate-500 uppercase tracking-[0.2em]">{innings.battingTeam} Batting â€¢ CRR: {rr}</p>
+              <p className="text-[8px] font-bold text-slate-500 uppercase tracking-[0.2em]">{innings.battingTeam} Batting • CRR: {rr}</p>
               
               {/* Conditional Result/Requirement Row */}
               {isSecondInnings && target !== null && (
@@ -99,7 +99,7 @@ const LiveScorecard: React.FC<LiveScorecardProps> = ({ match, onToggleScoreboard
                     </p>
                   ) : (
                     <p className="text-[8px] font-bold text-amber-400 uppercase tracking-[0.2em]">
-                      Target: {target} â€¢ Need {runsNeeded} from {ballsRemaining} balls (RRR: {rrr})
+                      Target: {target} • Need {runsNeeded} from {ballsRemaining} balls (RRR: {rrr})
                     </p>
                   )}
                 </div>
@@ -160,14 +160,14 @@ const LiveScorecard: React.FC<LiveScorecardProps> = ({ match, onToggleScoreboard
                 onClick={() => setShowFullHistory(false)}
                 className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white text-xl"
               >
-                Ã—
+                x
               </button>
            </div>
            
            <div className="flex-1 overflow-y-auto no-scrollbar space-y-6">
               {groupedOvers.length === 0 ? (
                 <div className="h-full flex flex-col items-center justify-center text-slate-600 opacity-50">
-                  <span className="text-4xl mb-4">ðŸ</span>
+                  <span className="text-4xl mb-4">🏏</span>
                   <p className="font-bold uppercase tracking-widest text-[10px]">No balls recorded yet</p>
                 </div>
               ) : (
